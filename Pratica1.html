@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Arthur Brilhante">
+    <meta name="description" content="This page is my frist way to pratice HTML.">
+    <title>Formulario de Pesquisa</title>
+    <link rel="icon" href="https://i.pinimg.com/originals/53/e3/fd/53e3fd9a5ec1fe47198ca41283bf8bf2.jpg" type="image/x-icon">
+</head>
+
+<style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    </style>
+
+<body style="background-color:powderblue;">
+
+    <div class="content">
+
+    <header>
+       <main>
+         <article id="perguntasgeral">
+         <h1>
+            <strong>Formulario de Pesquisa</strong>
+        </h1>
+            <p>Complete os Campos Abaixo:</p>
+            <br>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                  <legend>Informações pessoais</legend>
+                <p>
+                <label for="primeironome">Primeiro nome:</label>
+                <input type="text" name="primeironome" id="primeironome" placeholder="Seu Nome" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="sobrenome">Sobre nome</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" autocomplete="on" required>
+                </p>
+                <p>
+                <label for="senha">Senha:</label>
+                <input type="senha" name="senha" id="senha" placeholder="Senha" required>
+                </p>
+                <p>
+                <label for="numerodetelefone">Numero de telefone:</label>
+                <input type="tel" name="numerodetelefone" id="numerodetelefone" placeholder="555-555-555"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </p>
+                <label for="decada">Decada de Nascimento:</label>
+                <input type="number" name="decada" id="decada"
+                min="1950" max="2020" step="10" value="1980">
+                </p>
+                <p>
+                  <label for="café">Seu tipo de café favorito</label>
+                  <select name="café" id="café">
+                    <optgroup label="Cafés">
+                    <option value="cafénormal">Café Normal</option>
+                    <option value="cafégelado">Café gelado</option>
+                    </optgroup>
+                  <optgroup label="Espressos">
+                    <option value="latte">Latte</option>
+                    <option value="cappuccino">Cappuccino</option>
+                    <option value="cortado">Cortado</option>
+                    <option value="americano">Americano</option>
+                  </optgroup>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </p>
+              <!--   <p>
+                  <label for="coffee">Favorite coffe</label>
+                  <input type="text" name="coffee" id="coffee" list="coffee-list">
+                  <datalist id="coffee-list">
+                    <option value="cofee">
+                    <option value="regular cofee">
+                    <option value="iced coffee">
+                    <option value="latte">
+                    <option value="cappuccino">
+                    <option value="cortado">
+                    <option value="americano">
+                    <option value="other">Other</option>
+                  </datalist>
+
+                    essa forma tbm pode ser usada :)
+
+                </p> -->
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>Qual sua comida favorita?</legend>
+                <p>
+                  <input type="radio" name="comida" id="tacos" value="tacos">
+                  <label for="tacos">tacos</label>
+                </p>
+                <p>
+                  <input type="radio" name="comida" id="pizza" value="pizza">
+                  <label for="pizza">pizza</label>
+                </p>
+                <p>
+                  <input type="radio" name="comida" id="Outro" value="outro">
+                  <label for="outro">Outro</label>
+                </p>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>Você tem pets?</legend>
+                  <p>
+                     <input type="checkbox" name="pets" id="cachorro" value="cachorro">
+                     <label for="cachorro">Cachorro</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" name="pets" id="gato" value="gato">
+                     <label for="gato">Gato</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" name="pets" id="peixe" value="peixe">
+                     <label for="peixe">Peixe</label>
+                  </p>
+                  <p>
+                     <input type="checkbox" name="pets" id="outropet" value="outroPet">
+                     <label for="outroPet">Outro Pet</label>
+                  </p>
+              </fieldset>
+              <br>
+              <fieldset>
+                <legend>Me envie uma sugestão!</legend>
+                <label for="menssage">Sua mensagem</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Sua mensagem aqui"></textarea>
+              </fieldset>
+              <br>
+              <button type="submit">Enviar</button>
+              <button type="submit" formaction="https://httpsbin.org/post" formmethod="post">Postar</button>
+              <button type="reset">Resetar</button>
+            </div>
+         </article>   
+       </main>
+    </header>
+<footer>
+    <p>&lt;&lt;&lt; ArthurB&copy; &gt;&gt;&gt;</p>
+</footer>
+</body>
+
